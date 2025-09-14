@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "Rulon.h"
 using namespace std;
 class Room
 {
@@ -16,6 +17,16 @@ public:
 		height = h;
 		isGlueTheCeiling = is;
 	}
+	double calculateRolls(Rulon& rulon, double roomWidth, double roomLength, double roomHeight)
+	{
+		double wallArea = (roomLength * 2 + roomWidth * 2) * roomHeight;
+		double rollArea = rulon.getWidth() * rulon.getLength();
+
+		double rollsNeeded = wallArea / rollArea;
+
+		return rollsNeeded;
+	}
+
 	~Room()
 	{
 		delete[]name;
