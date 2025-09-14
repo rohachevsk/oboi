@@ -1,6 +1,30 @@
 ﻿  Kvartira.cpp
-  Room.cpp
+C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Kvartira.cpp(2,1): error C1004: непредвиденное обнаружение конца файла
   Rulon.cpp
+C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Room.h(33,24): error C2061: синтаксическая ошибка: идентификатор "Rulon"
+  (компиляция исходного файла "Rulon.cpp")
+  
+C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Room.h(36,21): error C2065: rulon: необъявленный идентификатор
+  (компиляция исходного файла "Rulon.cpp")
+  
+C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Room.h(36,40): error C2065: rulon: необъявленный идентификатор
+  (компиляция исходного файла "Rulon.cpp")
+  
   Stoimost`Oboev.cpp
+C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Room.h(33,24): error C2061: синтаксическая ошибка: идентификатор "Rulon"
+  (компиляция исходного файла "Stoimost%60Oboev.cpp")
+  
+C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Room.h(36,21): error C2065: rulon: необъявленный идентификатор
+  (компиляция исходного файла "Stoimost%60Oboev.cpp")
+  
+C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Room.h(36,40): error C2065: rulon: необъявленный идентификатор
+  (компиляция исходного файла "Stoimost%60Oboev.cpp")
+  
+C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Stoimost`Oboev.cpp(5,1): error C2059: синтаксическая ошибка: using namespace
+C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Stoimost`Oboev.cpp(32,40): error C2660: Room::calculateRolls: функция не принимает 1 аргументов
+      C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Room.h(33,9):
+       см. объявление "Room::calculateRolls"
+      C:\Users\ivanr\source\repos\Stoimost`Oboev\Stoimost`Oboev\Stoimost`Oboev.cpp(32,40):
+      при попытке сопоставить список аргументов "(Rulon)"
+  
   Создание кода...
-  Stoimost`Oboev.vcxproj -> C:\Users\ivanr\source\repos\Stoimost`Oboev\x64\Debug\Stoimost`Oboev.exe

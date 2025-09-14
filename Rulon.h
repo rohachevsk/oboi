@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include "Room.h"
-using namespace std;
 class Rulon
 {
 private: 
@@ -29,6 +28,10 @@ public:
 	double getLength()
 	{
 		return length;
+	}
+	double getPrice()
+	{
+		return price;
 	}
 };
 

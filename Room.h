@@ -1,11 +1,12 @@
 #pragma once
 #include <iostream>
 #include "Rulon.h"
-using namespace std;
 class Room
 {
 	char* name;
-	double length, width, height;
+	double length;
+	double width;
+	double height;
 	bool isGlueTheCeiling;
 public:
 	Room(const char* n, double l, double w, double h, bool is)
@@ -17,9 +18,21 @@ public:
 		height = h;
 		isGlueTheCeiling = is;
 	}
-	double calculateRolls(Rulon& rulon, double roomWidth, double roomLength, double roomHeight)
+	double getLength()
 	{
-		double wallArea = (roomLength * 2 + roomWidth * 2) * roomHeight;
+		return length;
+	}
+	double getWidth()
+	{
+		return width;
+	}
+	double getHeight()
+	{
+		return height;
+	}
+	double calculateRolls(Rulon& rulon)
+	{
+		double wallArea = (getLength() * 2 + getWidth() * 2) * getHeight();
 		double rollArea = rulon.getWidth() * rulon.getLength();
 
 		double rollsNeeded = wallArea / rollArea;

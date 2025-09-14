@@ -1,6 +1,7 @@
 #pragma once
 #include "Room.h"
-class Kvartira 
+using namespace std;
+class Kvartira
 {
 private:
     Room** rooms;
@@ -9,9 +10,9 @@ private:
 public:
     Kvartira(int max)
     {
-        rooms = new Room*[max];
+        rooms = new Room * [max];
         currentRooms = 0;
-        max = maxRooms;
+        maxRooms = max;
     }
     void addNewRooms()
     {
@@ -22,28 +23,31 @@ public:
         char wallpaperName[100];
         if (currentRooms < maxRooms)
         {
-			cout << "Enter name: ";
-			cin >> wallpaperName;
-			cout << "Enter leight: ";
-			cin >> length;
-			cout << "Enter width: ";
-			cin >> width;
-			cout << "Enter height: ";
-			cin >> height;
-			cout << "Enter isGlueTheCeiling (1 - yes, 0 - no): ";
-			cin >> is;
-			Room* Apartaments = new Room(wallpaperName, length, width, height, is);
-			rooms[currentRooms] = Apartaments;
-			currentRooms++;
+            cout << "Enter wallpaper name: ";
+            cin >> wallpaperName;
+            cout << "Enter length: ";
+            cin >> length;
+            cout << "Enter width: ";
+            cin >> width;
+            cout << "Enter height: ";
+            cin >> height;
+            cout << "Enter isGlueTheCeiling (1 - yes, 0 - no): ";
+            cin >> is;
+            Room* Apartaments = new Room(wallpaperName, length, width, height, is);
+            rooms[currentRooms] = Apartaments;
+            currentRooms++;
         }
         else
         {
-			cout << ("No more rooms can be added, Error");
+            cout << ("No more rooms can be added, Error");
         }
 
     }
- 
 
+    Room* getRoom(int index)
+    {
+        return rooms[index];
+    }
     ~Kvartira()
     {
         for (int i = 0; i < currentRooms; ++i)
@@ -51,6 +55,6 @@ public:
             delete rooms[i];
         }
         delete[] rooms;
-};
+    };
 
-
+}
